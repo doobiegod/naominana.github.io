@@ -1,0 +1,879 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'inter', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+    background: rgb(37, 231, 215);
+}
+label.logo{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #504d4d;
+    line-height: 80px;
+    margin: 0 100px;
+    
+}
+label.logo:hover{
+    margin: 5px 100px;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #504d4d;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #74787c;
+    transition: .5s;
+}
+
+.checkbtn{
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+
+#main-banner{
+    display: flex;
+    text-align: left;
+    padding: 0 100px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    background-color: rgba(37, 231, 215, 0.623);
+    position: relative;
+    overflow: hidden;
+}
+#main-banner .welcome{
+    display: flex;
+}
+#main-banner .myphoto{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-banner .myphoto img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.main-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1{
+    font-size: 40px;
+    letter-spacing: -0.05rem;
+    width: 100%;
+    z-index: 1;
+    text-shadow: 0px 1px 20px rgb(0, 0, 0);
+}
+
+#main-banner p{
+    position: inherit;
+    font-size: 20px;
+    width: 100%;
+    text-shadow: 0px 1px 20px rgb(0, 0, 0);
+    z-index: 1;
+}
+#hero{
+    padding-top: 150px;
+}
+/* skill page ...........................................................*/
+#skill-heading{
+    position: relative;
+    background: url(images/skills.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 95%;
+    border-radius: 0 0 25px 25px;
+    overflow: hidden;
+    z-index: -3;
+}
+
+#skill-heading .overlay{
+    position: inherit;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+}
+
+#skill-heading .overlay h1{
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding-top: 60px;
+}
+
+.my-skills {
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+}
+.my-skills h2 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background: linear-gradient(#504d4d, #1b1a1a);
+    border-radius: 5px;
+    padding: 5px 20px ;
+}
+.my-skills ul li {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+    color: #020831;
+   
+}
+
+
+/*..................................................................................*/
+
+/* about page ...........................................................*/
+#about-heading{
+    position: relative;
+    background: url(images/godwin.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    padding: 0;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 0 0 25px 25px;
+    overflow: hidden;
+    z-index: -3;
+}
+
+#about-heading .overlay{
+    position: inherit;
+    background-color: rgba(53, 8, 90, 0.9);
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+}
+
+#about-heading .overlay h1{
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding-top: 60px;
+}
+
+#about-me-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 100px auto;
+    width: 90%;
+    background: url(images/godwin.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 25px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    z-index: -3;
+}
+
+#about-me-text .overlay{
+    position: inherit;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+#about-me-text .about-hero h5{
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    margin: 100px auto;
+    z-index: 3;
+    max-width: 850px;
+    line-height: 3rem;
+}
+
+.about-child h5{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 200;
+    margin: 100px auto;
+    z-index: 3;
+    max-width: 750px;
+    line-height: 2rem;
+    text-shadow: 5px 2px 9px rgba(0, 0, 0, 0.2)
+}
+
+#about-me-text .overlay p {
+    margin: 0 auto;
+    padding: 30px 0;
+    max-width: 900px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+}
+
+#about-me-text hr {
+    width: 75%;
+    border: -0.5em solid;
+}
+
+/*...................................................................*/
+
+/*my portfolio.............................................................................*/
+
+.my-portfolio {
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 0;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-text{
+    width: 700px;
+    margin: 0 auto;
+    color: #504d4d;
+}
+
+.portfolio-text h3{
+    font-size: 1.8rem;
+}
+.portfolio-text h4{
+    font-size: 1.3rem;
+}
+.portfolio-text p{
+    font-size: 1.2rem;
+    max-width: 700px;
+    line-height: 30px;
+}
+.portfolio-text ul li{
+    font-size: 1.1rem;
+    max-width: 700px;
+    line-height: 25px;
+}
+.portfolio-text a{
+    text-decoration: none;
+    color: #504d4da9;
+}
+
+
+.web-project {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.web-project img.image {
+    width: 800px;
+    object-fit: fill;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.my-portfolio p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    transition: .5s;
+} 
+.my-portfolio p:hover {
+    color: #0082e6;
+    text-decoration: wavy;
+    cursor: pointer;
+} 
+
+/*.......................................................................................*/
+
+#my-resume {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#my-resume p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 10px;
+}
+
+#my-resume h2 {
+    line-height: 2rem;
+}
+
+#my-resume h3 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-top: 50px;
+    padding-left: 20px;
+    background: linear-gradient(#504d4d, #1b1a1a);
+    border-radius: 5px;
+    color: white;
+}
+
+#my-resume h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 40px;
+}
+#my-resume ul{
+    line-height: 2rem;
+}
+.my-data{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-weight: 400;
+    width: fit-content;
+    margin: 0 auto;
+    
+}
+
+.my-data a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.my-data p{
+    padding-left: 10px;
+}
+
+.my-data h1{
+    font-size: 3rem;
+    color: #504d4d;
+    font-weight: 600;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.summary {
+    display: block;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.summary h2{
+    font-size: 3rem;
+    color: #504d4d;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.experience{
+    text-align: left;
+    display: block;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+.experience ul {
+    width: inherit;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.cv-skill{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+    color: #504d4d;
+}
+.cv-skill h2{
+    font-size: 38px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+hr {
+    margin-top: 50px;
+    max-width: 70%;
+    height: 2px;
+    background: #fff;
+    border: none;
+}
+
+/*...............................................................................................*/
+.btn{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    z-index: 1;
+}
+
+.btn button{
+    text-decoration: none;
+    background-color: inherit;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: all .5s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 1px 20px rgb(0, 0, 0);
+}
+
+.btn button:hover{
+    background: #504d4d4d;
+    font-size: 15px;
+    border: 1px solid white;
+    transition: .3s;
+    cursor: pointer;
+}
+.btn button img{
+    filter: invert(1);
+    width: 20px;
+    margin-left: 5px;
+}
+
+
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(171, 169, 169);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 30px;
+    padding: 0 20px;
+    background: rgb(37, 231, 215);
+    color: #504d4d;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: 1px solid white;
+}
+footer ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0;
+}
+footer .foot-logo{
+    font-weight: 700;
+}
+footer .logo{
+    margin-left: 10px;
+}
+.foot-icon{
+    width: 34px;
+    height: 34px;
+    padding: 0 8px;
+    opacity: .7;
+    transition: .5s;
+}
+
+.foot-icon:hover{
+    transform: translateY(-20%); 
+}
+    
+footer .foot-case{
+    padding-top: 0%;
+    text-align: left;
+    line-height: 1.3em;
+    letter-spacing: -0.1px;
+}
+
+footer .foot-case p{
+    margin-top: 0;
+}
+
+h5{
+    margin-top: 0%;
+    font-size: 24px;
+    color: #000;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .timeline{
+        width: 80vw;
+    }
+
+    .timeline .checkpoint {
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none
+    }
+
+    .timeline .checkpoint::before {
+        width: 3px;
+        height: 2.6em;
+        top: -1.3em;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .timeline .checkpoint div::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .benefits{
+        padding: 0 50px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+  
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .team h2{
+        font-size: 30px;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 1000px) {
+    label.logo{
+        margin: 0 60px;
+        
+    }
+
+    label.logo:hover{
+        margin: 0 60px;
+    }
+    /*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+    .overlay{
+        padding: 0 20px;
+    }
+
+
+    #main-banner{
+        margin: 0;
+        padding: 60px 60px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .checkbtn{
+        display: block;
+        filter: invert(1);
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        margin-top: 0;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 50px;
+        transition: all .5s;
+        color: #fff;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: #fff;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+        overflow-y: auto;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+
+    nav ul li{
+        display: block;
+        padding: 20px;
+    }
+
+    .icon{
+        margin-top: -25px;
+    }
+
+    #cta{
+        margin: 0%;
+        border-radius: 0%;
+    }
+
+    #cta h2{
+        font-size: 36px;
+    }
+
+    .blog img{
+        max-width: 100%;
+        max-height: 250px;
+    }
+
+    .checkpoint:nth-child(even) {
+        text-align: center;
+    }
+
+    .checkpoint:nth-child(odd) {
+        text-align: center;
+    }
+
+    .experience{
+        padding: 30px;
+    }
+    .web-project img.image {
+        max-width: 700px;
+    }
+
+
+    footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
+
+    }
+
+    footer .foot-case {
+        margin-top: 40px;
+        text-align: center;
+    }
+    footer ul{
+        margin: 0 auto;
+        padding: 0;
+    }
+    footer .first{
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    label.logo{
+        margin: 0 40px;
+    }
+    
+    label.logo:hover{
+        margin: 0 40px;
+    }
+
+    /*........................................*/
+    #about-me-text{
+        padding: 0;
+        margin: 100px auto;
+        width: 98%;
+    }
+
+    .web-project img.image {
+        max-width: 350px;
+    }
+
+    .summary{
+        padding: 0 20px;
+        text-align: left;
+        margin: 0%;
+    }
+    .summary h2{
+        font-size: 2rem;
+        text-align: center;
+    
+    }
+    
+    .summary p{
+        margin: 0;
+    }
+    .portfolio-text{
+        width: 80%;
+        padding: 0 10px;
+        margin: 0 auto;
+        color: #504d4d;
+    }
+    .portfolio-text p{
+        width: 80%;
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+
+    .my-data h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+
+    #main-banner{
+        margin: 0;
+        padding: 60px 30px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 80vh;
+
+    
+    }
+
+    #main-banner .myphoto img {
+        max-width: 380px;
+        max-height: 380px;
+    }
+
+    #hero{
+        width: 100%;
+    }
+    h1{
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #main-banner p{
+        font-size: 17px;
+        line-height: 1.5rem;
+        letter-spacing: -0.05em;
+    }
+
+    .btn button{
+        font-size: 15px;
+    }
+
+
+    #blog-highlights img{
+        width: 450px;
+    }
+
+    #benefits h2{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    #benefits p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .benefits{
+        padding: 0 20px;
+    }
+
+    .icon{
+        width: 25px;
+        height: 25px;
+        margin-top: -15px;
+    }
+
+    #cta{
+        margin: 0%;
+        border-radius: 0%;
+    }
+
+    #cta h2{
+        font-size: 30px;
+    }
+
+    #cta button{
+        font-size: 14px;
+    }
+
+
+    
+}
